@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700;800&family=Manrope:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700;800&family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700&display=swap');
 
 :root {
   --ink: #0b1220;
@@ -17,6 +17,7 @@
   --radius: 26px;
   --font-sans: "Manrope", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-display: "League Spartan", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --font-brand: "Sora", "Manrope", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -80,11 +81,10 @@ img { max-width: 100%; height: auto; }
 .brand-mark > span { display: none; }
 .brand-copy strong {
   display: block;
-  line-height: 1.02;
-  font-family: var(--font-display);
-  font-size: 1.28rem;
-  letter-spacing: .045em;
-  text-transform: uppercase;
+  line-height: 1.06;
+  font-family: var(--font-brand);
+  font-size: 1.12rem;
+  letter-spacing: .01em;
   color: #ffffff;
 }
 .brand-copy small {
@@ -106,6 +106,80 @@ nav a:hover, .text-link:hover { color: var(--gold); }
   font-weight: 900;
   white-space: nowrap;
   box-shadow: 0 10px 24px rgba(0,0,0,.28);
+}
+
+.top-logo-showcase {
+  display: grid;
+  gap: 1rem;
+  padding: 1.1rem clamp(1rem, 4vw, 4rem) 1.4rem;
+  background:
+    linear-gradient(180deg, rgba(6,12,24,.96), rgba(14,24,40,.9)),
+    radial-gradient(circle at top right, rgba(246,183,60,.18), transparent 34%);
+}
+.top-logo-panel {
+  width: min(100%, 820px);
+  margin: 0 auto;
+  padding: .85rem;
+  border-radius: 28px;
+  background: #000000;
+  border: 2px solid rgba(185,28,28,.92);
+  box-shadow: 0 18px 40px rgba(0,0,0,.32);
+}
+.top-logo-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.top-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.top-category-card {
+  position: relative;
+  display: flex;
+  min-height: 220px;
+  align-items: flex-end;
+  padding: 1.15rem;
+  border-radius: 22px;
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: 0 18px 40px rgba(0,0,0,.24);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.top-category-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6,12,24,.08), rgba(6,12,24,.74));
+}
+.top-category-card strong,
+.top-category-card span {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+.top-category-card strong {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: .02em;
+}
+.top-category-card span {
+  margin-top: .4rem;
+  max-width: 26ch;
+  color: rgba(255,255,255,.84);
+  font-size: .94rem;
+  font-weight: 700;
+}
+.top-category-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(246,183,60,.48);
+  box-shadow: 0 24px 52px rgba(0,0,0,.28);
 }
 
 .agent-note {
@@ -1100,6 +1174,7 @@ footer a { color: white; }
   nav { display: none; }
   .cards { grid-template-columns: repeat(2, 1fr); }
   .brand-family-grid,
+  .top-category-grid,
   .hero-subgrid,
   .segment-panel,
   .signal-grid,
@@ -1123,6 +1198,20 @@ footer a { color: white; }
   .topbar { display: none; }
   .site-header { align-items: flex-start; }
   .phone-pill { display: none; }
+  .top-logo-showcase {
+    padding-top: .9rem;
+    padding-bottom: 1rem;
+  }
+  .top-logo-panel {
+    padding: .55rem;
+    border-radius: 22px;
+  }
+  .top-logo-image { border-radius: 16px; }
+  .top-category-card {
+    min-height: 180px;
+    padding: 1rem;
+  }
+  .top-category-card strong { font-size: 1.32rem; }
   .hero {
     min-height: auto;
     justify-items: start;
@@ -1133,7 +1222,7 @@ footer a { color: white; }
     width: 100%;
     max-width: 100%;
   }
-  .cards, .brand-family-grid, .contact-grid, .review-grid, .process-grid, .proof-strip, .faq-grid-home, .quick-contact, .town-grid, .hero-subgrid, .signal-grid, .insurance-grid, .materials-grid { grid-template-columns: 1fr; }
+  .cards, .brand-family-grid, .contact-grid, .review-grid, .process-grid, .proof-strip, .faq-grid-home, .quick-contact, .town-grid, .top-category-grid, .hero-subgrid, .signal-grid, .insurance-grid, .materials-grid { grid-template-columns: 1fr; }
   .brand-copy small { display: none; }
   .brand-mark { width: 76px; min-width: 76px; }
   .hero-mark-band { width: 100%; }
