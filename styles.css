@@ -108,6 +108,36 @@ nav a:hover, .text-link:hover { color: var(--gold); }
   box-shadow: 0 10px 24px rgba(0,0,0,.28);
 }
 
+.agent-note {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem clamp(1rem, 4vw, 4rem);
+  background: linear-gradient(90deg, #d92323 0%, #8f1515 55%, #1b2438 100%);
+  color: white;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.agent-note p {
+  margin: 0;
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+  font-weight: 800;
+}
+.agent-note strong {
+  color: #fff4c2;
+  font-family: var(--font-display);
+  letter-spacing: .02em;
+}
+.agent-note-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  justify-content: flex-end;
+}
+.agent-note .button.secondary {
+  background: transparent;
+}
+
 .hero {
   min-height: 78vh;
   display: grid;
@@ -1086,6 +1116,8 @@ footer a { color: white; }
   .split-heading { align-items: start; flex-direction: column; }
   footer { grid-template-columns: 1fr; }
   .footer-links { justify-content: flex-start; }
+  .agent-note { grid-template-columns: 1fr; }
+  .agent-note-actions { justify-content: flex-start; }
 }
 @media (max-width: 680px) {
   .topbar { display: none; }

@@ -68,7 +68,7 @@ if (chatbotShell) {
     chatbotPanel.hidden = false;
     chatbotToggle.setAttribute('aria-expanded', 'true');
     if (chatbotMessages && !chatbotMessages.dataset.seeded) {
-      addChatMessage('assistant', 'Hi, I can answer basic questions about roof repair, replacement, leaks, brands, siding, trim, gutters, and whether a project sounds residential, commercial, or industrial. If you need direct help, use the form or call Matthew for follow-up.');
+      addChatMessage('assistant', 'Hi, I can answer basic questions about roof repair, replacement, leaks, brands, siding, trim, gutters, and whether a project sounds residential, commercial, or industrial. If you want a live local agent, ask here and then call Matthew or use the form for direct follow-up.');
       chatbotMessages.dataset.seeded = 'true';
     }
     if (chatbotInput) {
@@ -120,7 +120,7 @@ if (chatbotShell) {
       return 'A useful estimate should explain the roof problem, whether repair or replacement is being recommended, what materials or systems are being discussed, and what the next step will be. The form on the page is set up to collect those first details.';
     }
 
-    return 'For basic questions, I can help with repair versus replacement, leaks, brands, siding, trim, gutters, and residential versus commercial versus industrial work. For anything job-specific, the best next step is to use the estimate form or call Matthew directly.';
+      return 'For basic questions, I can help with repair versus replacement, leaks, brands, siding, trim, gutters, and residential versus commercial versus industrial work. If you want a live local agent instead of the assistant, use the form or call Matthew directly.';
   };
 
   const handleChatPrompt = (message) => {
