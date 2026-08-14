@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720" role="img" aria-labelledby="title desc">
+  <title id="title">Modern Vision Roofing watermark</title>
+  <desc id="desc">Transparent Modern Vision Roofing watermark for background use.</desc>
+  <defs>
+    <linearGradient id="metal" x1="0" x2="1">
+      <stop offset="0" stop-color="#cbd5e1"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(72 80)">
+    <g opacity=".9">
+      <path d="M110 194 254 104l144 90-66 16-78-50-78 50Z" fill="#ffffff"/>
+      <path d="M54 218 166 170l12 40-58 26 58 26-12 40-112-48z" fill="url(#metal)"/>
+      <path d="m454 170 112 48-112 48-12-40 58-26-58-26z" fill="url(#metal)"/>
+      <path d="M114 204h278v162H114z" fill="none" stroke="#ffffff" stroke-width="18"/>
+      <text x="140" y="322" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="124" font-style="italic" font-weight="900" letter-spacing="5">MVR</text>
+      <path d="M164 390h184" fill="none" stroke="#d92323" stroke-width="24" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(620 28)">
+      <text x="0" y="190" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="124" font-style="italic" font-weight="900" letter-spacing="4">MODERN VISION</text>
+      <text x="4" y="338" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="118" font-style="italic" font-weight="900" letter-spacing="5">ROOFING</text>
+      <path d="M10 408h760" fill="none" stroke="#d92323" stroke-width="22" stroke-linecap="round"/>
+      <text x="4" y="486" fill="#f6b73c" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="900" letter-spacing="8">METHUEN  MA  |  MERRIMACK VALLEY</text>
+    </g>
+  </g>
+</svg>

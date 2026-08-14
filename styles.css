@@ -50,58 +50,61 @@ img { max-width: 100%; height: auto; }
   justify-content: space-between;
   gap: 1rem;
   padding: .9rem clamp(1rem, 4vw, 4rem);
-  background: rgba(255,255,255,.95);
-  border-bottom: 1px solid var(--line);
+  background:
+    linear-gradient(90deg, rgba(6,12,24,.98), rgba(6,12,24,.94)),
+    url('modern-vision-roofing-watermark.svg') right -220px center / 680px auto no-repeat;
+  border-bottom: 1px solid rgba(255,255,255,.08);
   backdrop-filter: blur(14px);
+  overflow: hidden;
 }
 .brand { display: inline-flex; align-items: center; gap: .85rem; text-decoration: none; min-width: max-content; }
 .brand-mark {
   position: relative;
   display: grid;
   place-items: center;
-  width: 94px;
-  height: 58px;
-  color: white;
-  background: #07111f url('modern-vision-roofing-logo.svg') center / cover no-repeat;
-  border-radius: 10px;
+  width: clamp(176px, 19vw, 246px);
+  padding: .3rem .45rem;
+  background: transparent;
+  border-radius: 14px;
   border: 1px solid rgba(11,18,32,.08);
-  box-shadow: 0 14px 28px rgba(11,18,32,.2);
-  overflow: hidden;
+  box-shadow: 0 12px 24px rgba(11,18,32,.08);
+  overflow: clip;
 }
-.brand-mark::before,
-.brand-mark svg,
-.brand-mark > span { display: none; }
-.mark-roof-back,
-.mark-roof-front,
-.mark-chimney,
-.mark-base {
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.brand-mark img { display: block; width: 100%; height: auto; }
+.brand-mark > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 3.1rem;
+  padding: .25rem .6rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #07111f 0%, #13233d 58%, #8f1515 100%);
+  color: #ffffff;
+  font-size: 1.35rem;
+  font-style: italic;
+  font-weight: 950;
+  letter-spacing: .08em;
 }
-.mark-roof-back { stroke: #f6b73c; stroke-width: 6; }
-.mark-roof-front, .mark-chimney { stroke: #ffffff; stroke-width: 6; }
-.mark-house { fill: #d92323; }
-.mark-window { fill: none; stroke: #ffffff; stroke-width: 2.5; stroke-linecap: round; }
-.mark-base { stroke: #f6b73c; stroke-width: 4; }
 .brand-copy strong {
   display: block;
   line-height: 1.02;
   font-size: 1.05rem;
   letter-spacing: .01em;
+  color: #ffffff;
 }
-.brand-copy small { display: block; color: var(--muted); font-size: .78rem; margin-top: .12rem; }
-nav { display: flex; gap: clamp(.7rem, 1.7vw, 1.25rem); color: #334155; font-weight: 800; }
+.brand-copy small { display: block; color: rgba(255,255,255,.7); font-size: .78rem; margin-top: .12rem; }
+nav { display: flex; gap: clamp(.7rem, 1.7vw, 1.25rem); color: rgba(255,255,255,.86); font-weight: 800; }
 nav a, .phone-pill, .button, .text-link { text-decoration: none; }
-nav a:hover, .text-link:hover { color: var(--brand); }
+nav a:hover, .text-link:hover { color: var(--gold); }
 .phone-pill {
-  color: white;
-  background: var(--ink);
+  color: var(--ink);
+  background: var(--gold);
   border-radius: 999px;
   padding: .78rem 1.08rem;
   font-weight: 900;
   white-space: nowrap;
-  box-shadow: 0 10px 24px rgba(11,18,32,.16);
+  box-shadow: 0 10px 24px rgba(0,0,0,.28);
 }
 
 .hero {
@@ -118,11 +121,24 @@ nav a:hover, .text-link:hover { color: var(--brand); }
   min-width: 0;
 }
 .hero-roofline {
+  position: relative;
+  overflow: hidden;
   background:
     linear-gradient(105deg, rgba(6, 12, 24, .92) 0%, rgba(6, 12, 24, .78) 46%, rgba(143,21,21,.5) 100%),
     url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2200&q=82');
   background-position: center;
   background-size: cover;
+}
+.hero-roofline::after {
+  content: "";
+  position: absolute;
+  inset: auto -220px -120px auto;
+  width: min(70vw, 880px);
+  aspect-ratio: 1600 / 720;
+  background: url('modern-vision-roofing-watermark.svg') center / contain no-repeat;
+  opacity: .14;
+  pointer-events: none;
+  transform: rotate(-8deg);
 }
 .hero h1, .section-heading h2, .split h2, .cta h2, .intro-grid h2, .feature-card h2 {
   margin: .3rem 0 1rem;
@@ -132,6 +148,23 @@ nav a:hover, .text-link:hover { color: var(--brand); }
 .hero h1 { max-width: 980px; font-size: clamp(3rem, 8vw, 7rem); }
 .lead { max-width: 760px; color: rgba(255,255,255,.88); font-size: clamp(1.08rem, 2vw, 1.38rem); }
 .eyebrow { margin: 0; color: var(--gold); font-weight: 950; letter-spacing: .13em; text-transform: uppercase; font-size: .78rem; }
+.hero-mark-band {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 520px);
+  margin-top: 1.6rem;
+  padding: .85rem 1rem;
+  border-radius: 22px;
+  background: linear-gradient(90deg, rgba(255,255,255,.12), rgba(255,255,255,.03));
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.06);
+  backdrop-filter: blur(10px);
+}
+.hero-mark-band img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
 .button { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; padding: .96rem 1.25rem; font-weight: 950; }
 .button.primary { background: var(--gold); color: #111827; box-shadow: 0 12px 28px rgba(246,183,60,.24); }
@@ -608,7 +641,8 @@ footer a { color: white; }
   }
   .cards, .contact-grid, .review-grid, .process-grid, .proof-strip, .faq-grid-home, .quick-contact, .town-grid { grid-template-columns: 1fr; }
   .brand-copy small { display: none; }
-  .brand-mark { width: 76px; height: 48px; }
+  .brand-mark { width: min(220px, 62vw); }
+  .hero-mark-band { width: 100%; }
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
