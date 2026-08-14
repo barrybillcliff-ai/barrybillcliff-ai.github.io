@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://modernvisionroofing.com/sitemap.xml
+Host: https://modernvisionroofing.com

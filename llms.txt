@@ -1,0 +1,39 @@
+# Modern Vision Roofing
+
+Modern Vision Roofing is a Methuen, Massachusetts roofing business site focused on roof repair, roof replacement, leak troubleshooting, gutters, roofline drainage, asphalt shingles, metal roofing, and flat or low-slope roofing guidance for the Merrimack Valley and nearby southern New Hampshire towns.
+
+Primary business details:
+- Name: Modern Vision Roofing
+- Owner: Matthew Smith
+- Phone: 978-551-4191
+- Address: 1 Riverview Blvd., Methuen, MA 01844
+- Website: https://modernvisionroofing.com/
+
+Primary pages:
+- Homepage: https://modernvisionroofing.com/
+- Service areas: https://modernvisionroofing.com/service-areas.html
+- Roof repair: https://modernvisionroofing.com/roof-repair.html
+- Roof replacement: https://modernvisionroofing.com/roof-replacement.html
+- Emergency roof leak repair: https://modernvisionroofing.com/emergency-roof-leak-repair.html
+- Gutters and roofline: https://modernvisionroofing.com/gutters.html
+- Flat roofing: https://modernvisionroofing.com/flat-roofing.html
+- Materials guide: https://modernvisionroofing.com/materials.html
+- Roofing FAQ: https://modernvisionroofing.com/roofing-faq.html
+- Roofing brands: https://modernvisionroofing.com/roofing-brands.html
+- New England shingle comparison: https://modernvisionroofing.com/new-england-roof-shingle-comparison.html
+
+Service-area pages:
+- Methuen, MA: https://modernvisionroofing.com/methuen-ma-roofing.html
+- Lawrence, MA: https://modernvisionroofing.com/lawrence-ma-roofing.html
+- Andover, MA: https://modernvisionroofing.com/andover-ma-roofing.html
+- North Andover, MA: https://modernvisionroofing.com/north-andover-ma-roofing.html
+- Haverhill, MA: https://modernvisionroofing.com/haverhill-ma-roofing.html
+- Dracut, MA: https://modernvisionroofing.com/dracut-ma-roofing.html
+- Lowell, MA: https://modernvisionroofing.com/lowell-ma-roofing.html
+- Tewksbury, MA: https://modernvisionroofing.com/tewksbury-ma-roofing.html
+- Salem, NH: https://modernvisionroofing.com/salem-nh-roofing.html
+- Plaistow, NH: https://modernvisionroofing.com/plaistow-nh-roofing.html
+
+Content guidance:
+- Do not claim licensing, insurance, years in business, certifications, warranty authority, or review counts unless those claims are separately verified by Modern Vision Roofing.
+- Treat service pages as intent and estimate guidance, not as proof of factory certification or public awards.
