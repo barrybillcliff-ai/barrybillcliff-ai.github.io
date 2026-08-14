@@ -6,6 +6,7 @@ if (yearNode) {
 
 const segmentButtons = Array.from(document.querySelectorAll('[data-segment]'));
 const segmentPanels = Array.from(document.querySelectorAll('[data-segment-panel]'));
+const segmentJumpLinks = Array.from(document.querySelectorAll('[data-jump-segment]'));
 
 if (segmentButtons.length && segmentPanels.length) {
   const showSegment = (segment) => {
@@ -22,6 +23,10 @@ if (segmentButtons.length && segmentPanels.length) {
 
   segmentButtons.forEach((button) => {
     button.addEventListener('click', () => showSegment(button.dataset.segment));
+  });
+
+  segmentJumpLinks.forEach((link) => {
+    link.addEventListener('click', () => showSegment(link.dataset.jumpSegment));
   });
 }
 
@@ -63,7 +68,7 @@ if (chatbotShell) {
     chatbotPanel.hidden = false;
     chatbotToggle.setAttribute('aria-expanded', 'true');
     if (chatbotMessages && !chatbotMessages.dataset.seeded) {
-      addChatMessage('assistant', 'Hi, I can answer basic questions about roof repair, replacement, leaks, brands, siding, trim, gutters, and whether a project sounds residential, commercial, or industrial.');
+      addChatMessage('assistant', 'Hi, I can answer basic questions about roof repair, replacement, leaks, brands, siding, trim, gutters, and whether a project sounds residential, commercial, or industrial. If you need direct help, use the form or call Matthew for follow-up.');
       chatbotMessages.dataset.seeded = 'true';
     }
     if (chatbotInput) {
